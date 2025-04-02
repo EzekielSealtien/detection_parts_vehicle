@@ -3,7 +3,7 @@ from ultralytics import YOLO
 import os
 import shutil
 from datetime import datetime
-
+ 
 # Load YOLOv8 model
 model = YOLO("best.pt") 
 
@@ -25,7 +25,7 @@ if uploaded_file is not None:
         output_dir = results[0].save_dir
         output_file = os.path.join(output_dir, os.path.basename(file_path))
 
-    st.image(output_file, caption="Detection Result", use_column_width=True)
+    st.image(output_file, caption="Detection Result", use_container_width =True)
 
     # Cleanup 
     if st.button("Clear temporary files"):
