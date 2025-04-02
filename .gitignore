@@ -166,3 +166,7 @@ Functions_/folderM
 Functions_/openaikey_files
 Functions_/openaikey.docx
 notebooks/notebook.ipynb
+
+
+runs/
+*.jpg
